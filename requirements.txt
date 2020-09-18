@@ -1,0 +1,4 @@
+
+azure-iot-device==2.2.0
+pytz==2020.1
+python-dotenv==0.14.0

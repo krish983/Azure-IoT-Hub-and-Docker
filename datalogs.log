@@ -1,0 +1,95 @@
+2020-09-18 11:13:51,277 :: INFO :: _create_mqtt_client :: 137 \ :: creating mqtt client
+2020-09-18 11:13:51,277 :: INFO :: _create_mqtt_client :: 150 \ :: Creating client for connecting using MQTT over TCP
+2020-09-18 11:13:51,363 :: INFO :: iothub_client_data_run :: 91 \ :: Sending Message to IoT Hub: {'header': {'ConfigVersion': 13, 'GroupID': 'EDGE', 'LandingPoint': 'Edge', 'MessageID': 1606287844, 'MessageType': 'IODataReport', 'SrcModule': 'your-python-edge-app', 'TimeStamp': 1600407831}, 'timestamp': '2020-09-17T22:43:51-07:00', 'device': [{'id': '2', 'tags': {'Sensor 1': {'quality_code': 2, 'timestamp': 1600407831, 'value': 180.34521084725807}, 'Sensor 2': {'quality_code': 2, 'timestamp': 1600407831, 'value': 180.34521084725807}}}, {'id': '2', 'tags': {'Sensor 3': {'quality_code': 2, 'timestamp': 1600407831, 'value': 180.34521084725807}, 'Sensor 4': {'quality_code': 2, 'timestamp': 1600407831, 'value': 180.34521084725807}}}]}
+2020-09-18 11:13:51,376 :: INFO :: send_message :: 166 \ :: Sending message to Hub...
+2020-09-18 11:13:51,377 :: INFO :: _run_op :: 957 \ :: ReconnectStage(ConnectOperation): State changes LOGICALLY_DISCONNECTED->LOGICALLY_CONNECTED.  Adding to wait list and sending new connect op down
+2020-09-18 11:13:51,377 :: INFO :: _run_op :: 171 \ :: MQTTTransportStage(ConnectOperation): connecting
+2020-09-18 11:13:51,378 :: INFO :: connect :: 374 \ :: connecting to mqtt broker
+2020-09-18 11:13:51,378 :: INFO :: connect :: 385 \ :: Connect using port 8883 (TCP)
+2020-09-18 11:13:54,956 :: INFO :: on_connect :: 180 \ :: connected with result code: 0
+2020-09-18 11:13:54,956 :: INFO :: _on_mqtt_connected :: 275 \ :: _on_mqtt_connected called
+2020-09-18 11:13:54,957 :: INFO :: _unblock :: 553 \ :: ConnectionLockStage(ConnectOperation): processing 0 items in queue
+2020-09-18 11:13:54,957 :: INFO :: _on_connected :: 86 \ :: Connection State - Connected
+2020-09-18 11:13:54,957 :: INFO :: _complete_waiting_connect_ops :: 1141 \ :: ReconnectStage: completing waiting ops with error=None
+2020-09-18 11:13:54,958 :: INFO :: _run_op :: 413 \ :: AutoConnectStage(MQTTPublishOperation): Connected.  Sending down and adding callback to check result
+2020-09-18 11:13:54,958 :: INFO :: _run_op :: 211 \ :: MQTTTransportStage(MQTTPublishOperation): publishing on devices/device_1/messages/events/
+2020-09-18 11:13:54,958 :: INFO :: publish :: 533 \ :: publishing on devices/device_1/messages/events/
+2020-09-18 11:13:56,389 :: INFO :: on_publish :: 248 \ :: payload published for 1
+2020-09-18 11:13:56,390 :: INFO :: send_message :: 172 \ :: Successfully sent message to Hub
+2020-09-18 11:13:57,392 :: INFO :: iothub_client_data_run :: 91 \ :: Sending Message to IoT Hub: {'header': {'ConfigVersion': 13, 'GroupID': 'EDGE', 'LandingPoint': 'Edge', 'MessageID': 1606287844, 'MessageType': 'IODataReport', 'SrcModule': 'your-python-edge-app', 'TimeStamp': 1600407837}, 'timestamp': '2020-09-17T22:43:57-07:00', 'device': [{'id': '1', 'tags': {'Sensor 1': {'quality_code': 0, 'timestamp': 1600407837, 'value': 726.0714477932637}, 'Sensor 2': {'quality_code': 0, 'timestamp': 1600407837, 'value': 726.0714477932637}}}, {'id': '1', 'tags': {'Sensor 3': {'quality_code': 0, 'timestamp': 1600407837, 'value': 726.0714477932637}, 'Sensor 4': {'quality_code': 0, 'timestamp': 1600407837, 'value': 726.0714477932637}}}]}
+2020-09-18 11:13:57,392 :: INFO :: send_message :: 166 \ :: Sending message to Hub...
+2020-09-18 11:13:57,393 :: INFO :: _run_op :: 413 \ :: AutoConnectStage(MQTTPublishOperation): Connected.  Sending down and adding callback to check result
+2020-09-18 11:13:57,393 :: INFO :: _run_op :: 211 \ :: MQTTTransportStage(MQTTPublishOperation): publishing on devices/device_1/messages/events/
+2020-09-18 11:13:57,394 :: INFO :: publish :: 533 \ :: publishing on devices/device_1/messages/events/
+2020-09-18 11:13:58,026 :: INFO :: on_publish :: 248 \ :: payload published for 2
+2020-09-18 11:13:58,027 :: INFO :: send_message :: 172 \ :: Successfully sent message to Hub
+2020-09-18 11:13:59,028 :: INFO :: iothub_client_data_run :: 91 \ :: Sending Message to IoT Hub: {'header': {'ConfigVersion': 13, 'GroupID': 'EDGE', 'LandingPoint': 'Edge', 'MessageID': 1606287844, 'MessageType': 'IODataReport', 'SrcModule': 'your-python-edge-app', 'TimeStamp': 1600407839}, 'timestamp': '2020-09-17T22:43:59-07:00', 'device': [{'id': '3', 'tags': {'Sensor 1': {'quality_code': 2, 'timestamp': 1600407839, 'value': 330.3994138307363}, 'Sensor 2': {'quality_code': 2, 'timestamp': 1600407839, 'value': 330.3994138307363}}}, {'id': '3', 'tags': {'Sensor 3': {'quality_code': 2, 'timestamp': 1600407839, 'value': 330.3994138307363}, 'Sensor 4': {'quality_code': 2, 'timestamp': 1600407839, 'value': 330.3994138307363}}}]}
+2020-09-18 11:13:59,028 :: INFO :: send_message :: 166 \ :: Sending message to Hub...
+2020-09-18 11:13:59,029 :: INFO :: _run_op :: 413 \ :: AutoConnectStage(MQTTPublishOperation): Connected.  Sending down and adding callback to check result
+2020-09-18 11:13:59,029 :: INFO :: _run_op :: 211 \ :: MQTTTransportStage(MQTTPublishOperation): publishing on devices/device_1/messages/events/
+2020-09-18 11:13:59,030 :: INFO :: publish :: 533 \ :: publishing on devices/device_1/messages/events/
+2020-09-18 11:13:59,663 :: INFO :: on_publish :: 248 \ :: payload published for 3
+2020-09-18 11:13:59,664 :: INFO :: send_message :: 172 \ :: Successfully sent message to Hub
+2020-09-18 11:14:00,665 :: INFO :: iothub_client_data_run :: 91 \ :: Sending Message to IoT Hub: {'header': {'ConfigVersion': 13, 'GroupID': 'EDGE', 'LandingPoint': 'Edge', 'MessageID': 1606287844, 'MessageType': 'IODataReport', 'SrcModule': 'your-python-edge-app', 'TimeStamp': 1600407840}, 'timestamp': '2020-09-17T22:44:00-07:00', 'device': [{'id': '3', 'tags': {'Sensor 1': {'quality_code': 2, 'timestamp': 1600407840, 'value': 928.6176997663806}, 'Sensor 2': {'quality_code': 2, 'timestamp': 1600407840, 'value': 928.6176997663806}}}, {'id': '3', 'tags': {'Sensor 3': {'quality_code': 2, 'timestamp': 1600407840, 'value': 928.6176997663806}, 'Sensor 4': {'quality_code': 2, 'timestamp': 1600407840, 'value': 928.6176997663806}}}]}
+2020-09-18 11:14:00,665 :: INFO :: send_message :: 166 \ :: Sending message to Hub...
+2020-09-18 11:14:00,665 :: INFO :: _run_op :: 413 \ :: AutoConnectStage(MQTTPublishOperation): Connected.  Sending down and adding callback to check result
+2020-09-18 11:14:00,666 :: INFO :: _run_op :: 211 \ :: MQTTTransportStage(MQTTPublishOperation): publishing on devices/device_1/messages/events/
+2020-09-18 11:14:00,666 :: INFO :: publish :: 533 \ :: publishing on devices/device_1/messages/events/
+2020-09-18 11:14:01,101 :: INFO :: on_publish :: 248 \ :: payload published for 4
+2020-09-18 11:14:01,102 :: INFO :: send_message :: 172 \ :: Successfully sent message to Hub
+2020-09-18 11:14:02,103 :: INFO :: iothub_client_data_run :: 91 \ :: Sending Message to IoT Hub: {'header': {'ConfigVersion': 13, 'GroupID': 'EDGE', 'LandingPoint': 'Edge', 'MessageID': 1606287844, 'MessageType': 'IODataReport', 'SrcModule': 'your-python-edge-app', 'TimeStamp': 1600407842}, 'timestamp': '2020-09-17T22:44:02-07:00', 'device': [{'id': '2', 'tags': {'Sensor 1': {'quality_code': 0, 'timestamp': 1600407842, 'value': 435.4788559622995}, 'Sensor 2': {'quality_code': 0, 'timestamp': 1600407842, 'value': 435.4788559622995}}}, {'id': '2', 'tags': {'Sensor 3': {'quality_code': 0, 'timestamp': 1600407842, 'value': 435.4788559622995}, 'Sensor 4': {'quality_code': 0, 'timestamp': 1600407842, 'value': 435.4788559622995}}}]}
+2020-09-18 11:14:02,104 :: INFO :: send_message :: 166 \ :: Sending message to Hub...
+2020-09-18 11:14:02,104 :: INFO :: _run_op :: 413 \ :: AutoConnectStage(MQTTPublishOperation): Connected.  Sending down and adding callback to check result
+2020-09-18 11:14:02,104 :: INFO :: _run_op :: 211 \ :: MQTTTransportStage(MQTTPublishOperation): publishing on devices/device_1/messages/events/
+2020-09-18 11:14:02,105 :: INFO :: publish :: 533 \ :: publishing on devices/device_1/messages/events/
+2020-09-18 11:14:03,043 :: INFO :: on_publish :: 248 \ :: payload published for 5
+2020-09-18 11:14:03,044 :: INFO :: send_message :: 172 \ :: Successfully sent message to Hub
+2020-09-18 11:14:04,046 :: INFO :: iothub_client_data_run :: 91 \ :: Sending Message to IoT Hub: {'header': {'ConfigVersion': 13, 'GroupID': 'EDGE', 'LandingPoint': 'Edge', 'MessageID': 1606287844, 'MessageType': 'IODataReport', 'SrcModule': 'your-python-edge-app', 'TimeStamp': 1600407844}, 'timestamp': '2020-09-17T22:44:04-07:00', 'device': [{'id': '3', 'tags': {'Sensor 1': {'quality_code': 2, 'timestamp': 1600407844, 'value': 22.88355914848027}, 'Sensor 2': {'quality_code': 2, 'timestamp': 1600407844, 'value': 22.88355914848027}}}, {'id': '3', 'tags': {'Sensor 3': {'quality_code': 2, 'timestamp': 1600407844, 'value': 22.88355914848027}, 'Sensor 4': {'quality_code': 2, 'timestamp': 1600407844, 'value': 22.88355914848027}}}]}
+2020-09-18 11:14:04,047 :: INFO :: send_message :: 166 \ :: Sending message to Hub...
+2020-09-18 11:14:04,048 :: INFO :: _run_op :: 413 \ :: AutoConnectStage(MQTTPublishOperation): Connected.  Sending down and adding callback to check result
+2020-09-18 11:14:04,048 :: INFO :: _run_op :: 211 \ :: MQTTTransportStage(MQTTPublishOperation): publishing on devices/device_1/messages/events/
+2020-09-18 11:14:04,049 :: INFO :: publish :: 533 \ :: publishing on devices/device_1/messages/events/
+2020-09-18 11:14:04,887 :: INFO :: on_publish :: 248 \ :: payload published for 6
+2020-09-18 11:14:04,888 :: INFO :: send_message :: 172 \ :: Successfully sent message to Hub
+2020-09-18 11:14:05,891 :: INFO :: iothub_client_data_run :: 91 \ :: Sending Message to IoT Hub: {'header': {'ConfigVersion': 13, 'GroupID': 'EDGE', 'LandingPoint': 'Edge', 'MessageID': 1606287844, 'MessageType': 'IODataReport', 'SrcModule': 'your-python-edge-app', 'TimeStamp': 1600407845}, 'timestamp': '2020-09-17T22:44:05-07:00', 'device': [{'id': '2', 'tags': {'Sensor 1': {'quality_code': 0, 'timestamp': 1600407845, 'value': 77.7586515777187}, 'Sensor 2': {'quality_code': 0, 'timestamp': 1600407845, 'value': 77.7586515777187}}}, {'id': '2', 'tags': {'Sensor 3': {'quality_code': 0, 'timestamp': 1600407845, 'value': 77.7586515777187}, 'Sensor 4': {'quality_code': 0, 'timestamp': 1600407845, 'value': 77.7586515777187}}}]}
+2020-09-18 11:14:05,892 :: INFO :: send_message :: 166 \ :: Sending message to Hub...
+2020-09-18 11:14:05,892 :: INFO :: _run_op :: 413 \ :: AutoConnectStage(MQTTPublishOperation): Connected.  Sending down and adding callback to check result
+2020-09-18 11:14:05,893 :: INFO :: _run_op :: 211 \ :: MQTTTransportStage(MQTTPublishOperation): publishing on devices/device_1/messages/events/
+2020-09-18 11:14:05,893 :: INFO :: publish :: 533 \ :: publishing on devices/device_1/messages/events/
+2020-09-18 11:14:06,245 :: INFO :: on_publish :: 248 \ :: payload published for 7
+2020-09-18 11:14:06,245 :: INFO :: send_message :: 172 \ :: Successfully sent message to Hub
+2020-09-18 11:14:07,248 :: INFO :: iothub_client_data_run :: 91 \ :: Sending Message to IoT Hub: {'header': {'ConfigVersion': 13, 'GroupID': 'EDGE', 'LandingPoint': 'Edge', 'MessageID': 1606287844, 'MessageType': 'IODataReport', 'SrcModule': 'your-python-edge-app', 'TimeStamp': 1600407847}, 'timestamp': '2020-09-17T22:44:07-07:00', 'device': [{'id': '2', 'tags': {'Sensor 1': {'quality_code': 1, 'timestamp': 1600407847, 'value': 139.78357420229045}, 'Sensor 2': {'quality_code': 1, 'timestamp': 1600407847, 'value': 139.78357420229045}}}, {'id': '2', 'tags': {'Sensor 3': {'quality_code': 1, 'timestamp': 1600407847, 'value': 139.78357420229045}, 'Sensor 4': {'quality_code': 1, 'timestamp': 1600407847, 'value': 139.78357420229045}}}]}
+2020-09-18 11:14:07,249 :: INFO :: send_message :: 166 \ :: Sending message to Hub...
+2020-09-18 11:14:07,249 :: INFO :: _run_op :: 413 \ :: AutoConnectStage(MQTTPublishOperation): Connected.  Sending down and adding callback to check result
+2020-09-18 11:14:07,249 :: INFO :: _run_op :: 211 \ :: MQTTTransportStage(MQTTPublishOperation): publishing on devices/device_1/messages/events/
+2020-09-18 11:14:07,250 :: INFO :: publish :: 533 \ :: publishing on devices/device_1/messages/events/
+2020-09-18 11:14:07,958 :: INFO :: on_publish :: 248 \ :: payload published for 8
+2020-09-18 11:14:07,959 :: INFO :: send_message :: 172 \ :: Successfully sent message to Hub
+2020-09-18 11:14:08,961 :: INFO :: iothub_client_data_run :: 91 \ :: Sending Message to IoT Hub: {'header': {'ConfigVersion': 13, 'GroupID': 'EDGE', 'LandingPoint': 'Edge', 'MessageID': 1606287844, 'MessageType': 'IODataReport', 'SrcModule': 'your-python-edge-app', 'TimeStamp': 1600407848}, 'timestamp': '2020-09-17T22:44:08-07:00', 'device': [{'id': '1', 'tags': {'Sensor 1': {'quality_code': 1, 'timestamp': 1600407848, 'value': 6.128233948048458}, 'Sensor 2': {'quality_code': 1, 'timestamp': 1600407848, 'value': 6.128233948048458}}}, {'id': '1', 'tags': {'Sensor 3': {'quality_code': 1, 'timestamp': 1600407848, 'value': 6.128233948048458}, 'Sensor 4': {'quality_code': 1, 'timestamp': 1600407848, 'value': 6.128233948048458}}}]}
+2020-09-18 11:14:08,961 :: INFO :: send_message :: 166 \ :: Sending message to Hub...
+2020-09-18 11:14:08,962 :: INFO :: _run_op :: 413 \ :: AutoConnectStage(MQTTPublishOperation): Connected.  Sending down and adding callback to check result
+2020-09-18 11:14:08,963 :: INFO :: _run_op :: 211 \ :: MQTTTransportStage(MQTTPublishOperation): publishing on devices/device_1/messages/events/
+2020-09-18 11:14:08,963 :: INFO :: publish :: 533 \ :: publishing on devices/device_1/messages/events/
+2020-09-18 11:14:09,494 :: INFO :: on_publish :: 248 \ :: payload published for 9
+2020-09-18 11:14:09,495 :: INFO :: send_message :: 172 \ :: Successfully sent message to Hub
+2020-09-18 11:14:10,537 :: INFO :: iothub_client_data_run :: 91 \ :: Sending Message to IoT Hub: {'header': {'ConfigVersion': 13, 'GroupID': 'EDGE', 'LandingPoint': 'Edge', 'MessageID': 1606287844, 'MessageType': 'IODataReport', 'SrcModule': 'your-python-edge-app', 'TimeStamp': 1600407850}, 'timestamp': '2020-09-17T22:44:10-07:00', 'device': [{'id': '1', 'tags': {'Sensor 1': {'quality_code': 1, 'timestamp': 1600407850, 'value': 296.94593322664247}, 'Sensor 2': {'quality_code': 1, 'timestamp': 1600407850, 'value': 296.94593322664247}}}, {'id': '1', 'tags': {'Sensor 3': {'quality_code': 1, 'timestamp': 1600407850, 'value': 296.94593322664247}, 'Sensor 4': {'quality_code': 1, 'timestamp': 1600407850, 'value': 296.94593322664247}}}]}
+2020-09-18 11:14:10,538 :: INFO :: send_message :: 166 \ :: Sending message to Hub...
+2020-09-18 11:14:10,539 :: INFO :: _run_op :: 413 \ :: AutoConnectStage(MQTTPublishOperation): Connected.  Sending down and adding callback to check result
+2020-09-18 11:14:10,539 :: INFO :: _run_op :: 211 \ :: MQTTTransportStage(MQTTPublishOperation): publishing on devices/device_1/messages/events/
+2020-09-18 11:14:10,540 :: INFO :: publish :: 533 \ :: publishing on devices/device_1/messages/events/
+2020-09-18 11:14:11,223 :: INFO :: on_publish :: 248 \ :: payload published for 10
+2020-09-18 11:14:11,224 :: INFO :: send_message :: 172 \ :: Successfully sent message to Hub
+2020-09-18 11:14:12,226 :: INFO :: iothub_client_data_run :: 91 \ :: Sending Message to IoT Hub: {'header': {'ConfigVersion': 13, 'GroupID': 'EDGE', 'LandingPoint': 'Edge', 'MessageID': 1606287844, 'MessageType': 'IODataReport', 'SrcModule': 'your-python-edge-app', 'TimeStamp': 1600407852}, 'timestamp': '2020-09-17T22:44:12-07:00', 'device': [{'id': '3', 'tags': {'Sensor 1': {'quality_code': 0, 'timestamp': 1600407852, 'value': 264.78658423233867}, 'Sensor 2': {'quality_code': 0, 'timestamp': 1600407852, 'value': 264.78658423233867}}}, {'id': '3', 'tags': {'Sensor 3': {'quality_code': 0, 'timestamp': 1600407852, 'value': 264.78658423233867}, 'Sensor 4': {'quality_code': 0, 'timestamp': 1600407852, 'value': 264.78658423233867}}}]}
+2020-09-18 11:14:12,226 :: INFO :: send_message :: 166 \ :: Sending message to Hub...
+2020-09-18 11:14:12,227 :: INFO :: _run_op :: 413 \ :: AutoConnectStage(MQTTPublishOperation): Connected.  Sending down and adding callback to check result
+2020-09-18 11:14:12,227 :: INFO :: _run_op :: 211 \ :: MQTTTransportStage(MQTTPublishOperation): publishing on devices/device_1/messages/events/
+2020-09-18 11:14:12,227 :: INFO :: publish :: 533 \ :: publishing on devices/device_1/messages/events/
+2020-09-18 11:14:12,771 :: INFO :: on_publish :: 248 \ :: payload published for 11
+2020-09-18 11:14:12,774 :: INFO :: send_message :: 172 \ :: Successfully sent message to Hub
+2020-09-18 11:14:13,777 :: INFO :: iothub_client_data_run :: 91 \ :: Sending Message to IoT Hub: {'header': {'ConfigVersion': 13, 'GroupID': 'EDGE', 'LandingPoint': 'Edge', 'MessageID': 1606287844, 'MessageType': 'IODataReport', 'SrcModule': 'your-python-edge-app', 'TimeStamp': 1600407853}, 'timestamp': '2020-09-17T22:44:13-07:00', 'device': [{'id': '3', 'tags': {'Sensor 1': {'quality_code': 2, 'timestamp': 1600407853, 'value': 250.78323146442236}, 'Sensor 2': {'quality_code': 2, 'timestamp': 1600407853, 'value': 250.78323146442236}}}, {'id': '3', 'tags': {'Sensor 3': {'quality_code': 2, 'timestamp': 1600407853, 'value': 250.78323146442236}, 'Sensor 4': {'quality_code': 2, 'timestamp': 1600407853, 'value': 250.78323146442236}}}]}
+2020-09-18 11:14:13,778 :: INFO :: send_message :: 166 \ :: Sending message to Hub...
+2020-09-18 11:14:13,779 :: INFO :: _run_op :: 413 \ :: AutoConnectStage(MQTTPublishOperation): Connected.  Sending down and adding callback to check result
+2020-09-18 11:14:13,779 :: INFO :: _run_op :: 211 \ :: MQTTTransportStage(MQTTPublishOperation): publishing on devices/device_1/messages/events/
+2020-09-18 11:14:13,779 :: INFO :: publish :: 533 \ :: publishing on devices/device_1/messages/events/
+2020-09-18 11:14:14,107 :: INFO :: on_publish :: 248 \ :: payload published for 12
+2020-09-18 11:14:14,107 :: INFO :: send_message :: 172 \ :: Successfully sent message to Hub
