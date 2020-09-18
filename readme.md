@@ -19,6 +19,13 @@ pip install -r requirements.txt
 ```
 
 Before running the code change the **connection string** to your ***IoT Hub device conenction string*** in ***.eng file***
+
+## Creating .env file
+```bash
+### The device connection string to authenticate the device with your IoT hub.
+IOTHUB_DEVICE_CONNECTION_STRING = "HostName=<Host Name>;DeviceId=<Device Name>;SharedAccessKey=<Device Key>"
+```
+
 ## Code Running
 
 ```python
